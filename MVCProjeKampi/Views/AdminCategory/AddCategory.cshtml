@@ -1,0 +1,41 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<h1>Yeni Kategori Ekleme Sayfası</h1>
+
+<br />
+@*Burası bi butona tıklayıp sayfaya bi post gönderildiği zaman çalışır*@
+@using (Html.BeginForm("AddCategory", "AdminCategory", FormMethod.Post))
+{
+
+    <div class="form-group">
+        @Html.Label("Kategori Adı")
+        @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+        @*x değeri category tablosunun name değerine eşitlenecek*@
+        @Html.ValidationMessageFor(x => x.CategoryName)
+        @*input yerine helper kullanma nedeni harf eksikliğinden kaynaklanan hata oranı daha az*@
+        <br /> <br />
+        @Html.Label("Açıklama")
+        @Html.TextAreaFor(x => x.CategoryDescriptionu, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CategoryDescriptionu)
+        @*bu şekilde validator şartlarını da entegre etmiş oldum*@
+        <br /> <br />
+        <button class="btn btn-primary" id="btn1">Kaydet</button>
+
+        <script>
+            $('#btn1').click(function () {
+                swal("Tebrikler!", "Başarılı bir şekilde eklendi!", "başarılı");
+            });
+        </script>
+
+        @*<button class="btn btn-primary">Kaydet</button>*@
+
+    </div>
+}
+
+

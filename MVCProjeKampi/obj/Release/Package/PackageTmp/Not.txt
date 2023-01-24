@@ -1,0 +1,3 @@
+Writer -> Heading ile 
+Category -> Heading ile
+Heading -> Content ile ilişkili
