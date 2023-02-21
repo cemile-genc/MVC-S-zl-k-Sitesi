@@ -1,6 +1,5 @@
 <h1 align="center"> MVC-Sözlük Sitesi</h1>
 <p><b>Eğitmen : </b>Murat Yücedağ - Eğitime ulaşmak için  <a href="https://www.youtube.com/watch?v=yFToRUL6h8A&list=PLKnjBHu2xXNNQJehhCg--CzQQMHXTsFAb" target="_blank">Tıklayınız</a></p>
-<p><b>Proje Videosu :</b> <a href="https://www.youtube.com/watch?v=GNpbT0jYglo&t=68s" target="_blank">İzlemek için tıklayınız</a></p>
 
 <h2 align="center">Proje İlerleyişi</h2>
 <b>Ders 1-20 :</b>
